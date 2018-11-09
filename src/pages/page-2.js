@@ -9,6 +9,11 @@ const Wrapper = styled('div')`
   width: 100vw;
   overflow: hidden;
   background: #323944;
+
+  a {
+    text-decoration: none;
+    color: orange;
+  }
 `
 
 const SecondPage = () => (

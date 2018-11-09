@@ -1,5 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'react-emotion'
+
+
+const MobileNav = styled('div')`
+
+`
 
 const Header = ({ siteTitle }) => (
   <div
