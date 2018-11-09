@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'react-emotion'
+import Image from '../components/image'
 
-
-const MobileNav = styled('div')`
-
+const LogoContainer = styled('div')`
+  margin: 0;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  // display: flex;
 `
 
 const Header = ({ siteTitle }) => (
@@ -19,11 +23,11 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 1480,
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, display: 'flex' }}>
         <Link
           to="/"
           style={{
@@ -31,7 +35,10 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          <LogoContainer>
+            <Image />
+          </LogoContainer>
+          {/* {siteTitle} */}
         </Link>
       </h1>
     </div>
