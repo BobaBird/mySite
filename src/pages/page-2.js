@@ -5,14 +5,18 @@ import styled from 'react-emotion'
 import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   background: #323944;
 
   a {
     text-decoration: none;
     color: orange;
+  }
+
+  @media (min-width: 800px) {
+    height: 100vh;
   }
 `
 
