@@ -7,10 +7,10 @@ import Image from '../components/image'
 
 
 const Wrapper = styled('div')`
-  height: 100%;
+  // height: 100%;
   width: 100%;
-  overflow: hidden;
-  background: #323944;
+  overflow-x: hidden;
+  background-color: #323944;
 
   a {
     text-decoration: none;

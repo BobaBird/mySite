@@ -20,14 +20,14 @@ const Wrapper = styled('div')`
   }
 `
 
-const SecondPage = () => (
+const About = () => (
   <Wrapper>
     <Layout>
-      <h1>Hi from the second page</h1>
-      <p>Welcome to page 2</p>
+      <h1>About</h1>
+      <p>Welcome to the About page</p>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   </Wrapper> 
 )
 
-export default SecondPage
+export default About

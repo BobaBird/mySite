@@ -4,18 +4,20 @@ import styled from 'react-emotion'
 import Image from '../components/image'
 import { FaBars } from 'react-icons/fa'
 
+import NavMenu from './nav-menu'
+
 const HeaderWrapper = styled('div')`
-  // display: flex;
+  display: grid;
   position: relative;
   margin: 0;
   padding: 0;
-  max-height: 120px;
+  max-height: 80px;
   // background: rgba(20, 20, 20, 1);
   background: #fff8ea;
   margin-bottom: 1.45rem;
 
   @media (min-width: 800px) {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 `
 
@@ -23,11 +25,12 @@ const LogoContainer = styled('div')`
   positiion: relative;
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
-  max-width: 65%;
+  max-width: 45%;
+  padding-bottom: 1.45rem;
 
   @media  (min-width: 800px) {
     margin: 0;
-    max-width: 30%;
+    max-width: 6%;
   }
 `
 
@@ -53,16 +56,29 @@ const MobileWrapper = styled('div')`
    }
 `
 
+const NavList = styled('div')`
+   grid-template-columns: 1fr 1fr 1fr;
+
+   ul {
+     li {
+       list-style-type: none;
+     }
+   }
+
+   a {
+     text-decoration: none;
+     list-display: none;
+   }
+`
+
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
-    <LogoContainer>
-      <Link to="/">
-          <LogoContainer>
-            <Image />
-          </LogoContainer>
+      <LogoContainer>
+    <Link to="/">
+          {/* <Image /> */}
           {/* {siteTitle} */}
-      </Link>
-    </LogoContainer>
+    </Link>
+      </LogoContainer>
 
 
       <MobileWrapper>
@@ -70,6 +86,8 @@ const Header = ({ siteTitle }) => (
           <FaBars />
         </button>
       </MobileWrapper>
+
+      <NavMenu />
 
   </HeaderWrapper>
 )
