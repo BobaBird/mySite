@@ -3,11 +3,11 @@ import { Link } from 'gatsby'
 import styled from 'react-emotion'
 import Toggle from '../Utilities/toggle'
 
-const NavWrapper = styled('div')`
+const MobileNavWrapper = styled('div')`
 text-align: center;
 ul {
     list-style: none;
-    
+
     a {
         // color: #fff;
     }
@@ -21,21 +21,21 @@ export default class NavMenu extends Component {
         <>
             <Toggle>
                 {({ toggle }) => (
-                    <NavWrapper>
+                    <MobileNavWrapper>
                         <ul>
-                            <Link to="/">
+                            <Link to="/" onClick={toggle} >
                                 <li>Home</li>
                             </Link>
 
-                            <Link to="/about/">
+                            <Link to="/about/" onClick={toggle} >
                                 <li>About</li>
                             </Link>
 
-                            <Link to="/contact/">
+                            <Link to="/contact/" onClick={toggle} >
                                 <li>Contact</li>
                             </Link>
                         </ul>
-                    </NavWrapper> 
+                    </MobileNavWrapper> 
                 )}
             </Toggle>
         </>  
