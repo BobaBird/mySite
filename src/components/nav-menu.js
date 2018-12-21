@@ -4,14 +4,22 @@ import styled from 'react-emotion'
 import Toggle from '../Utilities/toggle'
 
 const MobileNavWrapper = styled('div')`
-text-align: center;
-ul {
-    list-style: none;
-
-    a {
-        // color: #fff;
+    max-width: 585px;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding-right: 20px;
     }
-}
+    a {
+        margin-right: 10%;
+        font-size: 1.8rem;
+    }
+    
+    @media (min-width: 820px) {
+        
+    }
 `
 
 export default class NavMenu extends Component {

@@ -7,7 +7,7 @@ import Image from '../components/image'
 
 
 const Wrapper = styled('div')`
-  // height: 100%;
+  height: 100vh;
   width: 100%;
   overflow-x: hidden;
   background-color: #323944;
@@ -18,7 +18,7 @@ const Wrapper = styled('div')`
   }
 
   @media (min-width: 800px) {
-    height: 100vh;
+
   }
 `
 
@@ -31,7 +31,7 @@ const IndexPage = () => (
       <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
         <Image style={{ zIndex: '-10' }}/>
       </div>
-      <Link to="/page-2/">Go to page 2</Link>
+      <Link to="/about/">Go to About page</Link>
     </Layout>
   </Wrapper>  
 )
