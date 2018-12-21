@@ -46,18 +46,6 @@ const LogoContainer = styled('div')`
 `
 
 
-const NavList = styled('div')`
-  // list-style-type: none;
-  // max-width: 585px;
-  
-  // @media (min-widht: 820px) {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
-
-  
-`
-
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
       <HeaderContainer>
@@ -69,7 +57,7 @@ const Header = ({ siteTitle }) => (
           </LogoContainer>
 
 
-              <NavMenu />
+          <NavMenu />
 
 
       </HeaderContainer>
