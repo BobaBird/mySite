@@ -10,7 +10,7 @@ const MobileNavWrapper = styled('div')`
         list-style: none;
         display: flex;
         flex-direction: row;
-        padding-right: 20px;
+        padding-right: 18%;
     }
     a {
         margin-right: 10%;

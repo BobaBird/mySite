@@ -36,11 +36,11 @@ const LogoContainer = styled('div')`
   margin: 0;
   padding: 8px;
   padding-top: 60px;
-
+  align-items: center;
   width: 120px;
-  float: left;
-
-  @media (max-width: 820px) {
+  
+  @media (min-width: 820px) {
+    float: left;
     
   }
 `
