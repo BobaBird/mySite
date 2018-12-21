@@ -14,11 +14,13 @@ const MobileNavWrapper = styled('div')`
     }
     a {
         margin-right: 10%;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     
     @media (min-width: 820px) {
-        
+        a {
+            font-size: 1.4rem
+        }
     }
 `
 
