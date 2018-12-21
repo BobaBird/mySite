@@ -4,6 +4,7 @@ import styled from 'react-emotion'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
+import img from '../images/homeBG.jpg'
 
 
 const Wrapper = styled('div')`
@@ -11,6 +12,10 @@ const Wrapper = styled('div')`
   width: 100%;
   overflow-x: hidden;
   background-color: #323944;
+  background-image: url(${img});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   a {
     text-decoration: none;
