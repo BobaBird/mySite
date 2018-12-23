@@ -9,14 +9,18 @@ const Wrapper = styled('div')`
   width: 100%;
   overflow: hidden;
   background: #323944;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
   a {
     text-decoration: none;
     color: orange;
+    margin-top: 1.45rem;
   }
 
   @media (min-width: 800px) {
-    height: 100vh;
+
   }
 `
 

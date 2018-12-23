@@ -15,7 +15,8 @@ const HeaderWrapper = styled('div')`
   margin: 0;
   padding: 0;
   max-height: 80px;
-  background: #fff8ea;
+  // background: #fff8ea;
+  background-color: none;;
   margin-bottom: 1.45rem;
 
   @media (min-width: 820px) {
@@ -35,7 +36,7 @@ const HeaderContainer = styled('div')`
 const LogoContainer = styled('div')`
   margin: 0;
   padding: 8px;
-  padding-top: 60px;
+  padding-top: 80px;
   align-items: center;
   width: 120px;
   

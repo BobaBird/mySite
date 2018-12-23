@@ -10,16 +10,20 @@ const MobileNavWrapper = styled('div')`
         list-style: none;
         display: flex;
         flex-direction: row;
-        padding-right: 18%;
+        // padding-right: 18%;
+        margin-right: 18%;
+        
     }
     a {
         margin-right: 10%;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     @media (min-width: 820px) {
+        
         a {
-            font-size: 1.4rem
+            font-size: 1.4rem;
+            margin-right: 10%;
         }
     }
 `

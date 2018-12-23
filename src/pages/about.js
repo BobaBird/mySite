@@ -13,10 +13,11 @@ const Wrapper = styled('div')`
   a {
     text-decoration: none;
     color: orange;
+    margin-top: 1.45rem;
   }
 
   @media (min-width: 800px) {
-    height: 100vh;
+    // height: 100vh;
   }
 `
 
