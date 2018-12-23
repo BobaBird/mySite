@@ -20,6 +20,7 @@ const PageWrapper = styled('div')`
   const PageContainer = styled('div')`
   width: 100%;
   // height: 100%;
+  text-align: center;
   padding: 12px 0px 24px;
   margin: 2px auto;
   display: flex;

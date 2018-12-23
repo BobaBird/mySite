@@ -10,19 +10,22 @@ const MobileNavWrapper = styled('div')`
         list-style: none;
         display: flex;
         flex-direction: row;
-        // padding-right: 18%;
-        margin-right: 18%;
+        padding-right: 50px;
         
     }
     a {
         margin-right: 10%;
         font-size: 1rem;
+        // color: #1f2023;
+        color: #FF7C00 !important;
     }
     
     @media (min-width: 820px) {
-        
+        ul {
+            padding-right: 100px;
+        }
         a {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             margin-right: 10%;
         }
     }
@@ -47,6 +50,10 @@ export default class NavMenu extends Component {
 
                             <Link to="/contact/" onClick={toggle} >
                                 <li>Contact</li>
+                            </Link>
+
+                            <Link to="/portfolio/" onClick={toggle} >
+                                <li>Portfolio</li>
                             </Link>
                         </ul>
                     </MobileNavWrapper> 

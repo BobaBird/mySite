@@ -10,7 +10,7 @@ const HeaderWrapper = styled('div')`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  // max-width: 1250px;
+  // max-width: 1450px;
   position: relative;
   margin: 0;
   padding: 0;
