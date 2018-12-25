@@ -10,9 +10,38 @@ const Wrapper = styled('div')`
   overflow: hidden;
   background: #323944;
 
+  h1 {
+    // padding-top: 40px;
+    font-weight: 300;
+    font-size: 3.45rem;
+    
+    @media (min-width: 820px) {
+      font-size: 6rem;
+    }
+  }
+  
+  h2 {
+    font-weight: 300;
+    font-size: 3.45rem;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+
+  #pageLink {
+      font-size: 1.2rem;
+    //   color: orange;
+    color: #4d4d4d;
+      
+      &:hover {
+        color: #898989;
+        border-bottom: 2px solid;
+      }
+  }
+
   a {
     text-decoration: none;
-    color: orange;
     margin-top: 1.45rem;
   }
 
@@ -26,7 +55,7 @@ const Portfolio = () => (
     <Layout>
       <h1>Portfolio</h1>
       <p>Welcome to the Portfolio page</p>
-      <Link to="/">Go back to the homepage</Link>
+      <Link to="/" id="pageLink">Go back to the homepage</Link>
     </Layout>
   </Wrapper> 
 )

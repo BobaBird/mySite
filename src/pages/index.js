@@ -19,7 +19,7 @@ const Wrapper = styled('div')`
   text-shadow: 4px 4px 8px #4d4d4d, -4px -4px 8px #4d4d4d;
   
   h1 {
-    padding-top: 100px;
+    // padding-top: 100px;
     font-weight: 300;
     font-size: 3.45rem;
     color: #fff;
@@ -42,7 +42,7 @@ const Wrapper = styled('div')`
   
   a {
     text-decoration: none;
-    color: orange;
+    // color: orange;
     margin-top: 1.45rem;
   }
   
@@ -68,7 +68,7 @@ const IndexPage = () => (
         {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
           <Image style={{ zIndex: '-10' }}/>
         </div> */}
-        <Link to="/about/">Go to About page</Link>
+        {/* <Link to="/about/">Go to About page</Link> */}
       </Layout>
     </ImageFilter>
   </Wrapper>  

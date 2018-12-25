@@ -10,26 +10,36 @@ const MobileNavWrapper = styled('div')`
         list-style: none;
         display: flex;
         flex-direction: row;
-        padding-right: 50px;
+        padding-right: 100px;
         
     }
     a {
         margin-right: 10%;
         font-size: 1rem;
         // color: #1f2023;
-        color: #FF7C00 !important;
+        color: #FF7C00 ;
+        // color: orange;
+        &:hover {
+            transition: all 230ms ease;
+            border-bottom: 2px solid cornflowerblue;
+          }
     }
     
     @media (min-width: 820px) {
         ul {
-            padding-right: 100px;
+            padding-right: 80px;
         }
         a {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-right: 10%;
         }
     }
 `
+
+const activeLinkSTyle = {
+    borderBottom: '2px solid cornflowerblue',
+
+}
 
 export default class NavMenu extends Component {
   render() {
@@ -40,19 +50,19 @@ export default class NavMenu extends Component {
                 {({ toggle }) => (
                     <MobileNavWrapper>
                         <ul>
-                            <Link to="/" onClick={toggle} >
+                            <Link to="/" activeStyle={activeLinkSTyle} onClick={toggle} >
                                 <li>Home</li>
                             </Link>
 
-                            <Link to="/about/" onClick={toggle} >
+                            <Link to="/about/" activeStyle={activeLinkSTyle} onClick={toggle} >
                                 <li>About</li>
                             </Link>
 
-                            <Link to="/contact/" onClick={toggle} >
+                            <Link to="/contact/" activeStyle={activeLinkSTyle} onClick={toggle} >
                                 <li>Contact</li>
                             </Link>
 
-                            <Link to="/portfolio/" onClick={toggle} >
+                            <Link to="/portfolio/" activeStyle={activeLinkSTyle} onClick={toggle} >
                                 <li>Portfolio</li>
                             </Link>
                         </ul>

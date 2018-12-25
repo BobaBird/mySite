@@ -42,7 +42,7 @@ const LogoContainer = styled('div')`
   
   @media (min-width: 820px) {
     float: left;
-    
+    width: 115px;
   }
 `
 

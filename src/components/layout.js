@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'react-emotion'
 
 import Header from './header'
+import Footer from './footer'
 import './styles.css'
 
 const PageWrapper = styled('div')`
@@ -59,6 +60,7 @@ const Layout = ({ children }) => (
           <PageContainer >
             {children}
           </PageContainer>
+          <Footer  />
         </PageWrapper>
       </>
     )}
