@@ -9,27 +9,27 @@ import Footer from './footer'
 import './styles.css'
 
 const PageWrapper = styled('div')`
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  margin: 0;
-  padding: auto 18%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  // margin: 0;
+  // padding: auto 18%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: top;
   `
   
   const PageContainer = styled('div')`
-  width: 100%;
-  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-between;
+  // width: 100%;
   text-align: center;
   padding: 12px 0px 24px;
   margin: 2px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 40px;
   color: #c2c6ce;
+  padding-bottom: 120px;
 `
 
 
@@ -60,7 +60,7 @@ const Layout = ({ children }) => (
           <PageContainer >
             {children}
           </PageContainer>
-          <Footer  />
+          <Footer />
         </PageWrapper>
       </>
     )}

@@ -6,6 +6,15 @@ import { FiTwitter } from 'react-icons/fi'
 
 
 const SectionContainer = styled('div')`
+position: absolute;
+width: 100%;
+margin-top: 120px;
+padding-top: 80px;
+background-color: rgba(20, 20, 20, 1);
+color: #6a6a6a !important;
+min-height: 290px;
+margin-bottom: 0;
+padding-bottom: 0;
 text-align: center;
 justify-content: space-evenly;
 ul {
@@ -60,6 +69,7 @@ ul {
 }
 `
 const Titles = styled('h1')`
+    color: #6a6a6a !important;
     font-size: 2rem !important;
     font-weight: 300 !important;
     text-align: center !important;
@@ -68,20 +78,20 @@ const Titles = styled('h1')`
 
 
 const Footer = () => (
-  <div
-    style={{
-        // position: 'sticky',
-        paddingTop: '120px',
-        minHeight: '390px',
-        color: '#6a6a6a',
-        backgroundColor: 'rgba(20, 20, 20, 1)',
-        marginBottom: '0px',
-        paddingBottom: '0',
-        width: '100%'
-    }}
-  >
+//   <div
+//     style={{
+//         // position: 'sticky',
+//         paddingTop: '120px',
+//         minHeight: '390px',
+//         color: '#6a6a6a',
+//         backgroundColor: 'rgba(20, 20, 20, 1)',
+//         marginBottom: '0px',
+//         paddingBottom: '0',
+//         width: '100%'
+//     }}
+//   >
     <SectionContainer>
-            <Titles>Social Media</Titles>
+            <Titles style={{textShadow: 'none'}}>Social Media</Titles>
             <ul>
                 <li>
                     <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener noreferrer"><FiTwitter id="twitter" /></a> 
@@ -97,7 +107,7 @@ const Footer = () => (
                 </li>
             </ul>
     </SectionContainer>
-  </div>
+//   </div>
 )
 
 export default Footer

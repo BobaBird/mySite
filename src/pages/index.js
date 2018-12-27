@@ -8,7 +8,7 @@ import img from '../images/homeBG.jpg'
 
 
 const Wrapper = styled('div')`
-  height: 122.82vh;
+  // height: 122.82vh;
   width: 100%;
   overflow-x: hidden;
   // background-color: #323944;
@@ -61,7 +61,7 @@ const ImageFilter = styled('div')`
 const IndexPage = () => (
   <Wrapper>
     <ImageFilter>
-        <Layout>
+          <Layout>
         <h1>Leo Torres | Web Developer</h1>
         <h2>Websites, Blogs, E-commerce</h2>
         <p>Custom sites for what you need.</p>

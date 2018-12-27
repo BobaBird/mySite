@@ -5,7 +5,7 @@ import styled from 'react-emotion'
 import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
-  // height: 100vh;
+  height: 140vh;
   width: 100%;
   overflow: hidden;
   background: #323944;
