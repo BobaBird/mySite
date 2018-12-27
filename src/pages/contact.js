@@ -16,6 +16,7 @@ const Wrapper = styled('div')`
 
   form {
     min-width: 560px;
+    padding-bottom:120px;
   }
 
   h1 {
@@ -60,7 +61,7 @@ const Wrapper = styled('div')`
     background: red;
     color: #fff;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 20;
 
     span {

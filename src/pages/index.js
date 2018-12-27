@@ -8,9 +8,10 @@ import img from '../images/homeBG.jpg'
 
 
 const Wrapper = styled('div')`
+  // position: absolute;
   // height: 122.82vh;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   // background-color: #323944;
   background-image: url(${img});
   background-repeat: no-repeat;
@@ -65,10 +66,6 @@ const IndexPage = () => (
         <h1>Leo Torres | Web Developer</h1>
         <h2>Websites, Blogs, E-commerce</h2>
         <p>Custom sites for what you need.</p>
-        {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-          <Image style={{ zIndex: '-10' }}/>
-        </div> */}
-        {/* <Link to="/about/">Go to About page</Link> */}
       </Layout>
     </ImageFilter>
   </Wrapper>  
