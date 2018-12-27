@@ -4,7 +4,11 @@ import styled from 'react-emotion'
 import Toggle from '../Utilities/toggle'
 
 const MobileNavWrapper = styled('div')`
-    max-width: 585px;
+    max-width: 600px;
+    margin-left: 0;
+    :parent {
+        text-align: center;
+    }
     
     ul {
         list-style: none;
@@ -22,7 +26,20 @@ const MobileNavWrapper = styled('div')`
         &:hover {
             transition: all 230ms ease;
             border-bottom: 2px solid cornflowerblue;
-          }
+        }
+    }
+
+    @media (min-width: 565px ) {
+        margin-left: 18%;
+    }
+
+    @media (max-width: 657px) {
+        // margin-left: 18%;
+    }
+    
+    @media (min-width: 658px) {
+        margin-left: 22%;
+
     }
     
     @media (min-width: 820px) {
