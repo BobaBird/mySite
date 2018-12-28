@@ -39,7 +39,6 @@ const HeaderWrapper = styled('div')`
   
   @media (min-width: 820px) {
     display: flex;
-    
   }
   
   `
