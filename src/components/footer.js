@@ -70,7 +70,7 @@ ul {
 }
 
 @media (min-width: 820px) {
-    bottom: 0;
+    // bottom: 0;
 }
 `
 const Titles = styled('h1')`
