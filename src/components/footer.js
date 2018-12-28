@@ -68,10 +68,6 @@ ul {
         } 
     }
 }
-
-@media (min-width: 820px) {
-    // bottom: 0;
-}
 `
 const Titles = styled('h1')`
     color: #6a6a6a !important;
