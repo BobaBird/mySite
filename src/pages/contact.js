@@ -156,7 +156,9 @@ const Contact = () => (
         </p>
       </form> 
 
-      <Link to="/" id="pageLink">Go back to the homepage</Link>
+      <p>
+        <Link to="/" id="pageLink">Go back to the homepage</Link>
+      </p>
     </Layout>
       </Wrapper> 
 )

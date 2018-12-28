@@ -49,7 +49,9 @@ const About = () => (
     <Layout>
       <h1>About</h1>
       <p>Welcome to the About page</p>
-      <Link to="/" id="pageLink">Go back to the homepage</Link>
+      <p>
+        <Link to="/" id="pageLink">Go back to the homepage</Link>
+      </p>
     </Layout>
   </Wrapper> 
 )
