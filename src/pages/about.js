@@ -15,7 +15,6 @@ const Wrapper = styled('div')`
     // padding-top: 40px;
     font-weight: 300;
     font-size: 3.45rem;
-    
     @media (min-width: 820px) {
       font-size: 6rem;
     }

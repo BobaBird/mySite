@@ -19,7 +19,6 @@ const PageWrapper = styled('div')`
   `
   
   const PageContainer = styled('div')`
-  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;

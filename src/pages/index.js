@@ -12,18 +12,18 @@ const Wrapper = styled('div')`
   // height: 122.82vh;
   width: 100%;
   overflow: hidden;
-  // background-color: #323944;
-  background-image: url(${img});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  text-shadow: 4px 4px 8px #4d4d4d, -4px -4px 8px #4d4d4d;
+  background-color: #323944;
+  // background-image: url(${img});
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center center;
+  // text-shadow: 4px 4px 8px #4d4d4d, -4px -4px 8px #4d4d4d;
   
   h1 {
     // padding-top: 100px;
     font-weight: 300;
     font-size: 3.45rem;
-    color: #fff;
+    // color: #fff;
     
     @media (min-width: 820px) {
       font-size: 6rem;
@@ -31,14 +31,14 @@ const Wrapper = styled('div')`
   }
   
   h2 {
-    color: #fff;
+    // color: #fff;
     font-weight: 300;
     font-size: 3.45rem;
   }
   
   p {
     font-size: 2rem;
-    color: #fff; 
+    // color: #fff; 
   }
   
   a {
@@ -61,13 +61,13 @@ const ImageFilter = styled('div')`
 
 const IndexPage = () => (
   <Wrapper>
-    <ImageFilter>
+    {/* <ImageFilter> */}
           <Layout>
         <h1>Leo Torres | Web Developer</h1>
         <h2>Websites, Blogs, E-commerce</h2>
         <p>Custom sites for what you need.</p>
       </Layout>
-    </ImageFilter>
+    {/* </ImageFilter> */}
   </Wrapper>  
 )
 

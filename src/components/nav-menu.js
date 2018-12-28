@@ -18,6 +18,7 @@ const MobileNavWrapper = styled('div')`
         
     }
     a {
+        // font-weight: 200;
         margin-right: 10%;
         font-size: 1rem;
         // color: #1f2023;

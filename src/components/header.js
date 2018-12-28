@@ -16,7 +16,7 @@ const HeaderWrapper = styled('div')`
   // max-width: 1450px;
   position: relative;
   max-height: 80px;
-  // background: #fff8ea;
+  background: #fff8ea;
   background-color: none;;
   margin-bottom: 1.45rem;
   
@@ -69,10 +69,8 @@ const Header = ({ siteTitle }) => (
               </Link>
           </LogoContainer>
 
-
           <NavMenu />
-
-
+          
       </HeaderContainer>
 
   </HeaderWrapper>
