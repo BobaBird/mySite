@@ -23,7 +23,6 @@ const Wrapper = styled('div')`
     // padding-top: 100px;
     font-weight: 300;
     font-size: 3.45rem;
-    // color: #fff;
     
     @media (min-width: 820px) {
       font-size: 6rem;
@@ -31,14 +30,12 @@ const Wrapper = styled('div')`
   }
   
   h2 {
-    // color: #fff;
     font-weight: 300;
     font-size: 3.45rem;
   }
   
   p {
     font-size: 2rem;
-    // color: #fff; 
   }
   
   a {

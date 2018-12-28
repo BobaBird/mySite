@@ -8,6 +8,8 @@ import NavMenu from './nav-menu'
 
 const HeaderWrapper = styled('div')`
   display: flex;
+  height: 40px;
+  margin-bottom: 120px;
   // justify-content: space-around;
   justify-content: center;
   width: 100%;
@@ -15,19 +17,18 @@ const HeaderWrapper = styled('div')`
   text-align: center;
   // max-width: 1450px;
   position: relative;
-  max-height: 80px;
   background: #fff8ea;
   background-color: none;;
-  margin-bottom: 1.45rem;
   
   @media (min-width: 820px) {
+    height: 80px;
     margin: 0;
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 1.45rem;
   }
-`
-
-const HeaderContainer = styled('div')`
+  `
+  
+  const HeaderContainer = styled('div')`
   // display: flex;
   // flex-direction: row;
   max-width: 1250px;
@@ -70,7 +71,7 @@ const Header = ({ siteTitle }) => (
           </LogoContainer>
 
           <NavMenu />
-          
+
       </HeaderContainer>
 
   </HeaderWrapper>
