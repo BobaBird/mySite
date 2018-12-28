@@ -5,9 +5,11 @@ import styled from 'react-emotion'
 import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  // max-width: 960px;
+  margin auto;
   background: #323944;
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -113,18 +115,24 @@ const Wrapper = styled('div')`
   }
   #textArea {
     display: block;
-    // margin-left: 225px;
+    margin: 0 auto;
+    width: 80%;
     padding: 20px 0;
-    width: 100%;
 
   @media (min-width: 800px) {
-
+    text-align: center;
+    textarea {
+      max-width: 80%;
+    }
+    #textArea {
+      margin 0;
+    }
   }
 `
 
 const Contact = () => (
-  <Wrapper>
-    <Layout>
+    <Wrapper>
+  <Layout>
       <h1>Contact</h1>
       <p>Want to get started; still have questions? Drop me a line.</p>
 
@@ -150,7 +158,7 @@ const Contact = () => (
 
       <Link to="/" id="pageLink">Go back to the homepage</Link>
     </Layout>
-  </Wrapper> 
+      </Wrapper> 
 )
 
 export default Contact

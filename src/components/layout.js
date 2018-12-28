@@ -25,11 +25,18 @@ const PageWrapper = styled('div')`
   // justify-content: space-between;
   // width: 100%;
   text-align: center;
-  padding: 12px 0px 24px;
-  margin: 2px auto;
+  // padding: 12px 0px 24px;
+  // margin: 2px auto;
   padding-top: 40px;
   color: #c2c6ce;
-  padding-bottom: 120px;
+  // padding-bottom: 120px;
+
+  ul {
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
 `
 
 

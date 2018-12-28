@@ -6,6 +6,7 @@ import Toggle from '../Utilities/toggle'
 const MobileNavWrapper = styled('div')`
     max-width: 600px;
     margin-left: 0;
+    padding-bottom: 0;
     :parent {
         text-align: center;
     }
@@ -18,6 +19,7 @@ const MobileNavWrapper = styled('div')`
         
     }
     a {
+        text-decoration: none;
         // font-weight: 200;
         margin-right: 10%;
         font-size: 1rem;
