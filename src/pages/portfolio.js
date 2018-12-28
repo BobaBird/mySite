@@ -5,9 +5,9 @@ import styled from 'react-emotion'
 import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background: #323944;
 
   h1 {
@@ -56,7 +56,9 @@ const Portfolio = () => (
     <Layout>
       <h1>Portfolio</h1>
       <p>Welcome to the Portfolio page</p>
-      <Link to="/" id="pageLink">Go back to the homepage</Link>
+      <p>
+        <Link to="/" id="pageLink">Go back to the homepage</Link>
+      </p>
     </Layout>
   </Wrapper> 
 )
