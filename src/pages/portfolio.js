@@ -36,7 +36,8 @@ const Wrapper = styled('div')`
       
       &:hover {
         color: #898989;
-        border-bottom: 2px solid;
+        // border-bottom: 2px solid;
+        text-decoration: underline;
       }
   }
 
