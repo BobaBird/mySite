@@ -5,7 +5,7 @@ import styled from 'react-emotion'
 import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
-  height: 100vh + 120px;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   background: #323944;
@@ -108,6 +108,7 @@ const Wrapper = styled('div')`
 
   textarea {
     border: 1px solid #4d4d4d;
+    padding: 18px;
     
   }
   #textArea {

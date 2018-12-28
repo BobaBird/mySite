@@ -9,7 +9,7 @@ import img from '../images/homeBG.jpg'
 
 const Wrapper = styled('div')`
   // position: absolute;
-  // height: 122.82vh + 120px;
+  // height: 122.82vh;
   width: 100%;
   overflow: hidden;
   // background-color: #323944;
