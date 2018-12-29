@@ -52,15 +52,15 @@ const Wrapper = styled('div')`
 `
 
 const Portfolio = () => (
-  <Wrapper>
     <Layout>
+  <Wrapper>
       <h1>Portfolio</h1>
       <p>Welcome to the Portfolio page</p>
       <p>
         <Link to="/" id="pageLink">Go back to the homepage</Link>
       </p>
-    </Layout>
   </Wrapper> 
+    </Layout>
 )
 
 export default Portfolio

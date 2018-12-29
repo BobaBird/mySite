@@ -22,10 +22,10 @@ const Wrapper = styled('div')`
   h1 {
     // padding-top: 100px;
     font-weight: 300;
-    font-size: 3.45rem;
+    font-size: 6rem;
+    // font-size: 3.45rem;
     
     @media (min-width: 820px) {
-      font-size: 6rem;
     }
   }
   
@@ -57,15 +57,15 @@ const ImageFilter = styled('div')`
 `
 
 const IndexPage = () => (
+          <Layout>
   <Wrapper>
     {/* <ImageFilter> */}
-          <Layout>
         <h1>Leo Torres | Web Developer</h1>
         <h2>Websites, Blogs, E-commerce</h2>
         <p>Custom sites for what you need.</p>
-      </Layout>
     {/* </ImageFilter> */}
   </Wrapper>  
+      </Layout>
 )
 
 export default IndexPage

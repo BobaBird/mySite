@@ -6,23 +6,20 @@ import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
   // height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-  // max-width: 960px;
+  // width: 100%;
+  max-width: 960px;
   margin auto;
   background: #323944;
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position: center center;
-  text-align: center;
-
+  
   form {
-    min-width: 560px;
-    padding-bottom:120px;
+    max-width: 960px;
   }
 
   h1 {
-    // padding-top: 40px;
+
     font-weight: 300;
     font-size: 3.45rem;
     
@@ -48,6 +45,7 @@ const Wrapper = styled('div')`
   a {
     text-decoration: none;
     margin-top: 1.45rem;
+    
   }
 
   button {
@@ -64,11 +62,10 @@ const Wrapper = styled('div')`
     color: #fff;
     position: relative;
     overflow-x: hidden;
-    z-index: 20;
-
+    
     span {
       z-index: 20;
-
+      
     }
     &:active {
       background-color: #e01111;
@@ -76,7 +73,7 @@ const Wrapper = styled('div')`
       background-size: 100%;
       transition: background 0s;
     }
-
+    
     &:after {
       background: #fff;
       content: "";
@@ -97,42 +94,54 @@ const Wrapper = styled('div')`
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
-
+  
+  input {
+    // line-height: 30px;
+    font-size: 1.4rem;
+  }
+  
   input,
   select,
   textarea {
-
+    
     -webkit-text-fill-color: #4b5970;
     -webkit-box-shadow: 0 0 0 30px #fff inset;
     color: #2276f9;
     font-weight: 500;
   }
-
+  
   textarea {
+    font-size: 1.4rem;
     border: 1px solid #4d4d4d;
-    padding: 18px;
+    // padding: 18px;
+    max-width: 960px;
+
     
   }
   #textArea {
     display: block;
     margin: 0 auto;
     width: 80%;
-    padding: 20px 0;
+    padding: 5px 0;
 
   @media (min-width: 800px) {
-    text-align: center;
+    form {
+      // max-width: 960px;
+    }
+
     textarea {
-      max-width: 80%;
     }
     #textArea {
+      min-width: 100%;
       margin 0;
     }
   }
 `
 
 const Contact = () => (
-    <Wrapper>
-  <Layout>
+
+      <Layout>
+  <Wrapper>
       <h1>Contact</h1>
       <p>Want to get started; still have questions? Drop me a line.</p>
 
@@ -159,8 +168,8 @@ const Contact = () => (
       <p>
         <Link to="/" id="pageLink">Go back to the homepage</Link>
       </p>
-    </Layout>
       </Wrapper> 
+    </Layout>
 )
 
 export default Contact

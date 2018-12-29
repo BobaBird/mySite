@@ -45,15 +45,15 @@ const Wrapper = styled('div')`
 `
 
 const About = () => (
-  <Wrapper>
     <Layout>
+  <Wrapper>
       <h1>About</h1>
       <p>Welcome to the About page</p>
       <p>
         <Link to="/" id="pageLink">Go back to the homepage</Link>
       </p>
-    </Layout>
   </Wrapper> 
+    </Layout>
 )
 
 export default About
