@@ -20,7 +20,6 @@ const MobileNavWrapper = styled('div')`
     }
     a {
         text-decoration: none;
-        // font-weight: 200;
         margin-right: 10%;
         font-size: 1rem;
         // color: #1f2023;
@@ -31,18 +30,18 @@ const MobileNavWrapper = styled('div')`
             border-bottom: 2px solid cornflowerblue;
         }
     }
-
+    
     @media (min-width: 565px ) {
         margin-left: 18%;
     }
-
+    
     @media (max-width: 657px) {
         // margin-left: 18%;
     }
     
     @media (min-width: 658px) {
         margin-left: 22%;
-
+        
     }
     
     @media (min-width: 820px) {
@@ -50,14 +49,22 @@ const MobileNavWrapper = styled('div')`
             padding-right: 80px;
         }
         a {
-            font-size: 1.6rem;
-            margin-right: 10%;
+            font-weight: 250;
+            // color: #323944;
+            color: gray;
+            font-size: 2.3rem;
+            margin-right: 8%;
+            &:hover {
+                transition: all 230ms ease;
+                border-bottom: 3px solid cornflowerblue;
+            }
         }
     }
 `
 
 const activeLinkSTyle = {
-    borderBottom: '2px solid cornflowerblue',
+    borderBottom: '3px solid cornflowerblue',
+    // textDecoration: 'underline',
 
 }
 
