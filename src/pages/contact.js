@@ -63,7 +63,7 @@ const Wrapper = styled('div')`
     background: red;
     color: #fff;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     
     span {
       color: #fff;
