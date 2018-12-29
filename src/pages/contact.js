@@ -5,10 +5,10 @@ import styled from 'react-emotion'
 import Layout from '../components/layout'
 
 const Wrapper = styled('div')`
-  // height: 100vh;
   // width: 100%;
   max-width: 960px;
-  margin auto;
+  overflow-x: hidden;
+  margin: 0;
   background: #323944;
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -45,7 +45,7 @@ const Wrapper = styled('div')`
   a {
     text-decoration: none;
     margin-top: 1.45rem;
-    
+
   }
 
   button {
@@ -96,8 +96,8 @@ const Wrapper = styled('div')`
   }
   
   input {
-    // line-height: 30px;
     font-size: 1.4rem;
+    width: 280px;
   }
   
   input,
@@ -113,7 +113,6 @@ const Wrapper = styled('div')`
   textarea {
     font-size: 1.4rem;
     border: 1px solid #4d4d4d;
-    // padding: 18px;
     max-width: 960px;
 
     
