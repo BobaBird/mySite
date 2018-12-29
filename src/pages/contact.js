@@ -13,9 +13,11 @@ const Wrapper = styled('div')`
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position: center center;
+  z-index: 2;
   
   form {
     max-width: 960px;
+    padding-bottom: 120px;
   }
 
   h1 {
@@ -55,7 +57,7 @@ const Wrapper = styled('div')`
     line-height: 45px;
     text-transform: uppercase;
     border: red;
-    box-shadow: 2px 2px 4px #4d4d4d;
+    // box-shadow: 2px 2px 4px #4d4d4d;
     outline: none;
     width: 180px;
     background: red;
@@ -64,8 +66,7 @@ const Wrapper = styled('div')`
     overflow-x: hidden;
     
     span {
-      z-index: 20;
-      
+      color: #fff;
     }
     &:active {
       background-color: #e01111;
@@ -75,7 +76,7 @@ const Wrapper = styled('div')`
     }
     
     &:after {
-      background: #fff;
+      background: #fff !important;
       content: "";
       height: 155px;
       left: -75px;
@@ -85,10 +86,11 @@ const Wrapper = styled('div')`
       transform: rotate(35deg);
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
       width: 50px;
-      z-index: -10;
+      // z-index: -10;
     }
   }
   button:hover {
+    cursor: pointer;
     &:after {
       left: 120%;
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -103,7 +105,6 @@ const Wrapper = styled('div')`
   input,
   select,
   textarea {
-    
     -webkit-text-fill-color: #4b5970;
     -webkit-box-shadow: 0 0 0 30px #fff inset;
     color: #2276f9;
@@ -128,8 +129,6 @@ const Wrapper = styled('div')`
       // max-width: 960px;
     }
 
-    textarea {
-    }
     #textArea {
       min-width: 100%;
       margin 0;
@@ -151,12 +150,16 @@ const Contact = () => (
           <input type="text" name="name" required/>
         </p>
         <p>
-          <label htmlFor="email">Email: </label>
-          <input type="email" name="email" required/>
+          <span>
+            <label htmlFor="email">Email: </label>
+            <input type="email" name="email" required/>
+          </span>
         </p>
         <p>
-          <label htmlFor="message">Message: </label>
-          <textarea id="textArea" name="message" col="50" rows="8" required/>
+          <span>
+            <label htmlFor="message">Message: </label>
+            <textarea id="textArea" name="message" col="50" rows="8" required/>
+          </span>
         </p>
 
         <p>

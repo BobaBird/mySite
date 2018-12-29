@@ -12,6 +12,7 @@ margin-top: 120px;
 padding-top: 80px;
 // background-color: rgba(20, 20, 20, 1);
 background: #323944;
+// border-top: ridge 10px #fff8ea;
 color: #6a6a6a !important;
 min-height: 290px;
 margin-bottom: 0;
